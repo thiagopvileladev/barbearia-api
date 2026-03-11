@@ -565,3 +565,6 @@ build/
 config.local.json
 .env
 .env.*
+config.json
+config.yaml
+*.db.sql
