@@ -11,17 +11,38 @@ void CadastroController::asyncHandleHttpRequest(const HttpRequestPtr& req, std::
     {
         std::cerr << "Error getting json object" << std::endl;
         callback(resp);
-        exit(EXIT_FAILURE);
+        return;
     }
 
-    std::string nomeCliente = (*receive_json)["nomeCliente"].asString();
+    std::string clientName = (*receive_json)["clientName"].asString();
 
-    orm::DbClientPtr client = getDbClient();
-    std::string sql_command = "INSERT INTO nomeCliente (nome) VALUES ($1)";
+    auto client = drogon::app().getDbClient();
+    std::string sql_command = "INSERT INTO clientes (nome) VALUES ($1)";
 
-
-
-    // std::string sql_command = "INSERT INTO clientes (nome) VALUE ($1)";
-
-
+	client->execSqlAsync(
+		sql_command,
+		[callback](const drogon::orm::Result &db_result) {
+			Json::Value success_json;
+			success_json["status"] = "success";
+			success_json["message"] = "Agendado no banco";
+			
+			auto resp = drogon::HttpResponse::newHttpJsonResponse(success_json);
+			resp->addHeader("Access-Control-Allow-Origin", "*");
+			resp->addHeader("Access-Control-Allow-Methods", "*");
+			resp->addHeader("Access-Control-Allow-Headers", "*");
+			callback(resp);
+		},
+		[callback](const drogon::orm::DrogonDbException &db_error) {
+		    Json::Value error_json;
+		    error_json["status"] = "failed";
+		    error_json["message"] = "Erro no banco";
+		    
+		    auto resp = drogon::HttpResponse::newHttpJsonResponse(error_json);
+		    resp->addHeader("Access-Control-Allow-Origin", "*");
+		    resp->addHeader("Access-Control-Allow-Methods", "*");
+		    resp->addHeader("Access-Control-Allow-Headers", "*");
+		    callback(resp);
+		},
+		clientName
+	);
 }
