@@ -1,0 +1,362 @@
+:root{
+    --azul: #3232A0;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    
+}
+
+#painelHolder{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.sideMenu{
+    width: 7rem;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+#sideMenuLogo{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 2rem;
+    border-radius: 50%;
+}
+
+.sideMenuButton{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .3rem;
+    padding: 2.2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    color:#3232A0;
+    border-radius: 11px;
+}
+
+.sideMenuButton img{
+    width: 2rem;
+    height: 2rem;
+}
+
+#sideMenuButton1{
+    margin: 3rem 0 1.5rem 0;
+}
+
+#sideMenuButton3{
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1.5rem;
+}
+
+.hero{
+    width:calc(100% - 30rem);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem;
+    position: relative;
+}
+
+#hero2{
+    display: none;
+}
+
+#heroLightButton, #heroLightButton2{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem 2rem 0 0;
+}
+
+#heroLightButton img, #heroLightButton2 img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.heroTitle{
+    margin: 2rem 0 0 3rem;
+    font-family: sans-serif;
+
+}
+
+.heroTextData{
+    margin: .5rem 0 0 3rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color:#3232a0d5;
+}
+
+.heroBoxTitle{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 2rem 0 0 3rem;
+}
+
+#heroBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 0 0;
+}
+
+.heroBoxCard{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: start;
+}
+
+.heroBoxCardRight{
+    width: 78rem;
+    height: 5rem;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.heroBoxCardRightConfirmado{
+    position: absolute;
+    margin-left: 68rem;
+    background-color: rgb(26, 134, 26);
+    padding: .5rem 1rem;
+    border-radius: 15px;
+    font-family: sans-serif;
+    color: rgb(201, 255, 201);
+}
+
+.heroBoxCardRightImg{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 1rem;
+    border: 2px solid black;
+}
+
+.heroBoxCardRightImg img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+.heroBoxCardRightTextBox{
+    width: 15rem;
+    height: 5rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heroBoxCardRightTextBoxTitle{
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.heroBoxCardRightTextBoxText{
+    margin: 0;
+    font-family: sans-serif;
+    color:rgb(97, 97, 97);
+    width: fit-content;
+}
+
+.heroBoxCardLeft{
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+}
+
+.heroBoxCardLeftText{
+    margin: 0;
+    color:rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.heroBoxCardLeftRight{
+    width: 3rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroBoxCotoneteHead{
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.heroBoxCotoneteHeadInside{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    
+}
+
+.heroBoxCotoneteBody{
+    width: .1rem;
+    height: 4.95rem;
+    transform: translateY(0rem);
+    background-color: rgb(0, 0, 0);
+}
+
+.sideInfo{
+    width: 23rem;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.sideInfoTitle{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin: 5rem 0 2rem 0;
+}
+
+#sideInfoBox{
+    width: 17rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 11px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.sideInfoBoxCard{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 11px;
+}
+
+.sideInfoBoxCardBorder{
+    width: 15rem;
+    height: 1.25px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) , black 40%);
+}
+
+.sideInfoBoxCardText{
+    margin: 0 0 0 .5rem;
+    font-family: sans-serif;
+}
+
+.sideInfoBoxCardValue{
+    color:var(--azul);
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 0 0 0 .5rem;
+    font-size: 1.1rem;
+}
+
+.sideInfoBoxCardImg{
+    margin-left: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#sideInfoButtonHolder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: 17rem;
+    margin:2rem 0 0 0;
+}
+
+#sideInfoButton2{
+    display: none;
+}
+
+.sideInfoButton{
+    width: 17rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 11px;
+    border: 1.5px solid gray;
+    position: relative;
+    cursor: pointer;
+}
+
+.sideInfoButtonArrrow{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+}
+
+.sideInfoButtonImg{
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1rem 0 1rem;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.sideInfoButtonTextHolder{
+    width: fit-content;
+    height: fit-content;
+}
+
+.sideInfoButtonTextHolder p{
+    margin:0;
+    text-align: start;
+    font-size: 1rem;
+}
+
+.sideInfoButtonTextHolderText1{
+    color: gray;
+}
+
