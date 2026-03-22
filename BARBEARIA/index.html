@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="medias.css">
+    <title>Club Du Rafa</title>
+</head>
+<body>
+    <div id="loginHolder"></div>
+    <header id="header">
+        <button id="headerBack">
+            <img src="icons/undo.png" alt="">
+        </button>
+        <div id="headerHolder">
+            <div id="logo"><img src="logo.jpg" alt=""></div>
+        </div>
+        <div id="menuSlider">
+            <button id="menuSliderButton">Cadastrar ou Entrar</button>
+        </div>
+    </header>
+    <section id="hero">
+        <div id="carrossel">
+            <div id="carrosselTexter"><p></p></div>
+            <div id="carrosselHolder">
+                <div class="slide"><img src="banner_fotos/banner_foto_1.jpg" alt=""></div>
+                <div class="slide"><img src="banner_fotos/banner_foto_2.jpg" alt=""></div>
+                <div class="slide"><img src="banner_fotos/banner_foto_3.jpg" alt=""></div>
+                <div class="slide"><img src="banner_fotos/banner_foto_4.jpg" alt=""></div>
+                <div class="slide"><img src="banner_fotos/banner_foto_5.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="box">
+        <div id="boxLeft">
+            <div id="boxLeftCartao">
+                <div id="boxLeftCartaoImg"><img src="logo.jpg" alt=""></div>
+                <div id="boxLeftCartaoDetails">
+                    <p>Club du Rafa</p>
+                </div>
+            </div>
+            <h1 id="boxLeftTitle">Todos os serviços</h1>
+            <div id="servicosHolder">
+                <button class="servicosHolderButton" id="button1" onclick="irParaOFinal()">Cortes <img src="down-arrow.png" alt="" class="buttonArrow" id="buttonArrow1"></button>
+                <div id="button1Hider">
+                    <button class="button1HiderButton" id="button1HiderButton1">
+                        <div id="infoHolder1" class="infoHolder">
+                            <div class="infoHolderImg">
+                                <img src="icons/beard-trimming.png" alt="">
+                            </div>
+                            <div class="infoBox">
+                                <p class="infoBoxTitle">Barba</p>
+                                <div class="infoBoxHourHolder">
+                                    <img src="icons/clock.png" alt="" class="infoBoxImg">
+                                    <div class="infoBoxText">30 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="button1HiderButton" id="button1HiderButton2">
+                        <div id="infoHolder2" class="infoHolder">
+                            <div class="infoHolderImg">
+                                <img src="icons/hair-comb.png" alt="">
+                            </div>
+                            <div class="infoBox">
+                                <p class="infoBoxTitle">Corte 1 pente</p>
+                                <div class="infoBoxHourHolder">
+                                    <img src="icons/clock.png" alt="" class="infoBoxImg">
+                                    <div class="infoBoxText">30 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="button1HiderButton" id="button1HiderButton3">
+                        <div id="infoHolder3" class="infoHolder">
+                            <div class="infoHolderImg">
+                                <img src="icons/trimmer.png" alt="">
+                            </div>
+                            <div class="infoBox">
+                                <p class="infoBoxTitle">Corte Degradê</p>
+                                <div class="infoBoxHourHolder">
+                                    <img src="icons/clock.png" alt="" class="infoBoxImg">
+                                    <div class="infoBoxText">35 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="button1HiderButton" id="button1HiderButton4">
+                        <div id="infoHolder4" class="infoHolder">
+                            <div class="infoHolderImg">
+                                <img src="icons/scissors.png" alt="">
+                            </div>
+                            <div class="infoBox">
+                                <p class="infoBoxTitle">Corte e Barba</p>
+                                <div class="infoBoxHourHolder">
+                                    <img src="icons/clock.png" alt="" class="infoBoxImg">
+                                    <div class="infoBoxText">45 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="button1HiderButton" id="button1HiderButton5">
+                        <div id="infoHolder5" class="infoHolder">
+                            <div class="infoHolderImg">
+                                <img src="icons/trimmer(1).png" alt="">
+                            </div>
+                            <div class="infoBox" id="infoBox5">
+                                <p class="infoBoxTitle" id="infoBoxTitle5">Corte Low Fade</p>
+                                <div class="infoBoxHourHolder">
+                                    <img src="icons/clock.png" alt="" class="infoBoxImg">
+                                    <div class="infoBoxText">35 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="button1HiderButton" id="button1HiderButton6">
+                        <div id="infoHolder6" class="infoHolder">
+                            <div class="infoHolderImg">
+                                <img src="icons/scissors.png" alt="">
+                            </div>
+                            <div class="infoBox">
+                                <p class="infoBoxTitle">Corte Social</p>
+                                <div class="infoBoxHourHolder">
+                                    <img src="icons/clock.png" alt="" class="infoBoxImg">
+                                    <div class="infoBoxText">35 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <button class="servicosHolderButton" id="button2">Serviços Extras<img src="down-arrow.png" alt="" class="buttonArrow" id="buttonArrow2"></button>
+                <div id="button2Hider">
+                    <button class="button1HiderButton" id="button1HiderButton7">
+                        <div id="infoHolder1" class="infoHolder">
+                            <div class="infoHolderImg">
+                                <img src="icons/laser.png" alt="">
+                            </div>
+                            <div class="infoBox" id="infoBox7">
+                                <p class="infoBoxTitle">Depilação de nariz ou ouvido</p>
+                                <div class="infoBoxHourHolder">
+                                    <img src="icons/clock.png" alt="" class="infoBoxImg">
+                                    <div class="infoBoxText">10 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="button1HiderButton" id="button1HiderButton8">
+                        <div id="infoHolder1" class="infoHolder">
+                            <div class="infoHolderImg">
+                                <img src="icons/water.png" alt="">
+                            </div>
+                            <div class="infoBox">
+                                <p class="infoBoxTitle">Hidratação</p>
+                                <div class="infoBoxHourHolder">
+                                    <img src="icons/clock.png" alt="" class="infoBoxImg">
+                                    <div class="infoBoxText">40 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="button1HiderButton" id="button1HiderButton9">
+                        <div id="infoHolder1" class="infoHolder">
+                            <div class="infoHolderImg">
+                                <img src="icons/razor-hair-salon-tool.png" alt="">
+                            </div>
+                            <div class="infoBox">
+                                <p class="infoBoxTitle">Pézinho 1</p>
+                                <div class="infoBoxHourHolder">
+                                    <img src="icons/clock.png" alt="" class="infoBoxImg">
+                                    <div class="infoBoxText">10 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="button1HiderButton" id="button1HiderButton10">
+                        <div id="infoHolder1" class="infoHolder">
+                            <div class="infoHolderImg">
+                                <img src="icons/hair.png" alt="">
+                            </div>
+                            <div class="infoBox">
+                                <p class="infoBoxTitle">Realinhamento Capilar</p>
+                                <div class="infoBoxHourHolder">
+                                    <img src="icons/clock.png" alt="" class="infoBoxImg">
+                                    <div class="infoBoxText">1 H</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="button1HiderButton" id="button1HiderButton11">
+                        <div id="infoHolder1" class="infoHolder">
+                            <div class="infoHolderImg">
+                                <img src="icons/eyebrown-brushes.png" alt="">
+                            </div>
+                            <div class="infoBox">
+                                <p class="infoBoxTitle">Sobrancelha</p>
+                                <div class="infoBoxHourHolder">
+                                    <img src="icons/clock.png" alt="" class="infoBoxImg">
+                                    <div class="infoBoxText">30 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="equipeBox">
+                    <h1 id="equipeBoxTitle">Nossa equipe</h1>
+                    <div id="equipeBoxHolder">
+                        <div id="equipeCard1" class="equipeCard">
+                            <div class="equipeCardImg"></div>
+                            <p class="cardTitle">Rafael</p>
+                            <p class="cardText gray">Barbeiro</p>
+                        </div>
+                        <div id="equipeCard2" class="equipeCard">
+                            <div class="equipeCardImg"></div>
+                            <p class="cardTitle">Daniel</p>
+                            <p class="cardText gray">Barbeiro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="boxRight">
+            <div id="mapa">
+                <iframe id="mapaIframe" src="https://www.google.com/maps/embed?pb=!4v1773092382133!6m8!1m7!1s7mFHSQmX5Pw1mwZHclBY_w!2m2!1d-15.84273225237792!2d-47.97584308828256!3f303.2779791265657!4f-24.762019002465664!5f0.7820865974627469" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="mapaDown">
+                <div id="mapaDown1">
+                    <div id="mapaDown1Left">
+                        <img src="icons/marker.png" alt="">
+                    </div>
+                    <div id="mapaDown1Right">
+                        <p id="mapaDownRightText">2 Sria II Qe 32 Conjunto O P, Guará II, Brasília</p>
+                        <a href="https://www.google.com/maps/@-15.8427323,-47.9758431,3a,82.2y,303.28h,65.24t/data=!3m7!1e1!3m5!1s7mFHSQmX5Pw1mwZHclBY_w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D24.760000000000005%26panoid%3D7mFHSQmX5Pw1mwZHclBY_w%26yaw%3D303.28!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDMwOC4wIKXMDSoASAFQAw%3D%3D" id="mapaDownRightLink" target="_blank">Ver no mapa</a>
+                    </div>
+                </div>
+                <div id="mapaDown2">
+                    <div id="mapaDown2Left">
+                        <img src="icons/clock.png" alt="">
+                    </div>
+                    <div id="mapaDown2Right">
+                        <p>Domingo: <span class="gray">Fechado</span></p>
+                        <p>Segunda-Feira a Sexta-Feira: <span class="gray"><br>10:00 às 20:00</span></p>
+                        <p>Sábado: <span class="gray">09:00 às 17:00</span></p>
+                    </div>
+                </div>
+                <div id="mapaDown3">
+                    <div id="mapaDown3Left">
+                        <img src="icons/phone-call.png" alt="">
+                    </div>
+                    <div id="mapaDown3Right">
+                        <p>(61) 983791418</p>
+                    </div>
+                </div>
+                <div id="mapaDown4">
+                    <a href="#"><img src="icons/instagram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <footer id="footer"></footer>
+    
+    <section id="selecionarHorario">
+        <div id="agendamentoModal">
+        <div id="agendamentoHeader">
+            <button id="btnMesAnterior" class="setaMes">&lt;</button>
+            <h2 id="mesAnoTexto">Março 2026</h2>
+            <button id="btnMesProximo" class="setaMes">&gt;</button>
+        </div>
+
+        <div id="calendarioBox">
+        <div class="diasSemana">
+            <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
+        </div>
+        <div id="diasGrid">
+            </div>
+        </div>
+
+        <div id="divisor"></div>
+
+        <h3 id="horariosTitle">Selecione um horário</h3>
+        <div id="horariosBox">
+        </div>
+
+        <div id="agendamentoFooter">
+        <button id="btnVoltarProfissional">Voltar</button>
+        <button id="btnConfirmar" disabled>Confirmar</button>
+        </div>
+        </div>
+    </section>
+    
+    <section id="selecionarProfissional">
+        <h1 id="selecionarProfissionalTitle">Selecionar Profissional</h1>
+        <button class="profissionalButton" id="profissionalButton1">
+            <div class="profissionalButtonHolder">
+                <div class="profissionalButtonImg"></div>
+                <p class="profissionalButtonText">Rafael</p>
+            </div>
+            <div class="profissionalButtonStatus">
+                <p>Próximo horário: 11/03 às 8:00</p>
+            </div>
+        </button>
+        <button class="profissionalButton" id="profissionalButton2">
+            <div class="profissionalButtonHolder">
+                <div class="profissionalButtonImg"></div>
+                <p class="profissionalButtonText">Daniel</p>
+            </div>
+            <div class="profissionalButtonStatus">
+                <p>Próximo horário: 11/03 às 8:00</p>
+            </div>
+        </button>
+    </section>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
+

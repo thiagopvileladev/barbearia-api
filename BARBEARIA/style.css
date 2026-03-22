@@ -1,0 +1,893 @@
+body{
+    margin: 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    
+}
+
+
+#header{
+    width: 100%;
+    height: 6rem;
+    box-shadow: 0px 5px 10px 0px rgb(189, 189, 189);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    background-color: white;
+}
+
+#menuSlider{
+    width: 100%;
+    height: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    display: none;
+}
+
+#menuSliderButton{
+    padding:0;
+    height: 0;
+    border-radius: 6px;
+    background-color: #3232A0;
+    color:white;
+    border: none;
+    transition: .3s;
+    animation:opacity .4s;
+    cursor: pointer;
+}
+
+#headerHolder{
+    width: 60rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerBack{
+    position: absolute;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    border: none;
+    z-index: 9999999;
+    background-color: transparent;
+    display: none;
+}
+
+
+
+#headerBack img{
+    width: 3rem;
+    height: 3rem;
+}
+
+#logo{
+    width: 5rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#logo img{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+
+#hero{
+    width: 100%;
+    height: 34rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carrossel {
+    width: 60rem;
+    height: 30rem;
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 11px;
+}
+
+#carrosselTexter{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#carrosselHolder {
+    display: flex; 
+    width: 300rem; 
+    height: 100%;
+    transition: transform 0.5s ease;
+    transform: translateX(0rem);
+}
+
+.slide {
+    width: 60rem;
+    height: 100%;
+    flex-shrink: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    background-color: black;
+}
+
+.slide img{
+    opacity: .6;
+    width: 100%;
+}
+
+
+
+.carrosselArrow{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.carrosselArrow img{
+    width: 3rem;
+}
+
+
+
+#box{
+    width: 60rem;
+    height: fit-content;
+    display: flex;
+}
+
+#boxLeft{
+    height: 100%;
+    width:35rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#boxRight{
+    height: 100%;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#mapa{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: end;
+}
+
+#mapaIframe{
+    width: 22rem;
+    height: 100%;
+    box-shadow: 0px 0px 5px 0px rgb(95, 95, 95);
+}
+
+#mapaDown{
+    width: 22rem;
+    height: fit-content;
+    margin-left: 3rem;
+    box-shadow: 0px 0px 5px 0px rgb(95, 95, 95);
+    background-color: white;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+#mapaDown1{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+}
+
+#mapaDown1Left{
+    width: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+#mapaDown1Left img{
+    width: 1.5rem;
+}
+
+#mapaDown1Right{
+    width: 18rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mapaDownRightText{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 0 0 1.15rem;
+    color: rgb(17, 17, 17);
+}
+
+#mapaDownRightLink{
+    color: #3700ff;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: .5rem 0 0 1rem;
+}
+
+#mapaDown2{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    border-top: 1px solid rgb(155, 155, 155);
+}
+
+#mapaDown2Left{
+    width: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+#mapaDown2Left img{
+    width: 1.5rem;
+}
+
+#mapaDown2Right{
+    font-weight: 700;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mapaDown2Right p {
+    margin: 0 0 0 1rem;
+}
+
+.gray{
+    color: gray;
+    font-weight: 500;
+}
+
+#mapaDown3{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    border-top: 1px solid rgb(155, 155, 155);
+}
+
+#mapaDown3Left{
+    width: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+#mapaDown3Left img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#mapaDown3Right{
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0 0 0 1rem;
+    color:black;
+}
+
+#mapaDown4{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(155, 155, 155);
+}
+
+#mapaDown4 a{
+    margin-top: 1rem;
+    height: 3rem;
+}
+
+#mapaDown4 img{
+    width: 2rem;
+    height: 2rem;
+}
+
+#boxLeftCartao{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+}
+
+#boxLeftCartaoImg{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#boxLeftCartaoImg img{
+    width: 10rem;
+    border-radius: 11px;
+}
+
+#boxLeftCartaoDetails{
+    width: calc(100% - 10rem);
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#boxLeftCartaoDetails p{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: .5rem 0 0 1rem;
+    color:rgb(29, 29, 29);
+}
+
+#boxLeftTitle{
+    margin: 1rem 0 0 0;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: black; 
+}
+
+#servicosHolder{
+    width: 35rem;
+    height: fit-content;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.servicosHolderButton{
+    width: 100%;
+    height: 4rem;
+    border-radius: 11px;
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1rem;
+    padding-left: 2rem;
+    margin: 0;
+    overflow: hidden;
+}
+
+.buttonArrow{
+    width: 1.3rem;
+    position: absolute;
+    margin-left:30rem;
+    transition: .5s;
+}
+
+#button1Hider, #button2Hider{
+    width: calc(100% - 2.5px);
+    height: fit-content;
+    margin-bottom: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0rem 0;
+    gap: 1rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-top: 0px solid white;
+}
+
+.button1HiderButton{
+    width:100%;
+    height: 6rem;
+    cursor: pointer;
+    transition: .3s;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: none;
+    border-right: none;
+    
+}
+
+#button1HiderButton1, #button1HiderButton7{
+    border-top: 0px solid black;
+}
+
+#button1HiderButton6, #button1HiderButton11{
+    border-bottom: 0px solid black;
+}
+
+.infoHolder{
+    width: 30rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.infoHolderImg{
+    width: 5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoHolderImg img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.infoBox{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#infoBox5{
+    width: 15rem;
+    margin: 0 0 0 .5rem;
+}
+
+
+
+.infoBoxImg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.infoBoxHourHolder{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.infoBoxTitle{
+    font-size: 1.3rem;
+    margin: 0;
+
+}
+
+#equipeBox{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#equipeBoxTitle{
+    margin: 1rem 0 1.6rem 0;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+
+#equipeBoxHolder{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0 0 0;
+}
+
+.equipeCard{
+    width: 14rem;
+    height: 18rem;
+    box-shadow: 0px 0px 5px 0px rgb(95, 95, 95);
+    background-color: white;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipeCardImg{
+    width: 11rem;
+    height: 11rem;
+    background-color: rgb(182, 182, 182);
+    border-radius: 11px;
+    margin-top: 1rem;
+}
+
+.equipeCard p{
+    margin: 0;
+}
+
+.cardTitle{
+    padding: 1rem 0 .25rem 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.cardText{
+    font-family: sans-serif;
+}
+
+#footer{
+    width: 100%;
+    height: 15rem;
+    background-color: rgb(22, 22, 22);
+    display:flex;
+    transition: .3s;
+}
+
+#selecionarProfissional{
+    width: 100%;
+    height: calc(100vh - 6rem);
+    background-color: rgb(26, 26, 26);
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    animation: opacity .3s;
+    transition: .3s;
+}
+
+#selecionarProfissionalTitle{
+    text-align: center;
+    margin: 1.25rem 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.profissionalButton{
+    width: 40rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .35s;
+    border: none;
+    border-radius: 11px;
+}
+
+.profissionalButtonHolder{
+    width: fit-content;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.profissionalButtonImg{
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.profissionalButtonText{
+    font-size: 1.3rem;
+    color: rgb(10, 10, 10);
+}
+
+.profissionalButtonStatus{
+    width: 15rem;
+    height: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3232A0;
+    color:white;
+    margin-right: 2rem;
+    border-radius: 11px;
+}
+
+
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#loginHolder{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    animation: opacity .3s;
+}
+
+#button1:hover, #button2:hover{
+    background-color: white;
+}
+
+#selecionarHorario{
+    width: 100%;
+    height: calc(100% - 6rem);
+    position: fixed;
+    margin-top: 6rem;
+    background-color: rgb(22, 22, 22);
+}
+
+
+
+/* --- ESTILOS DO CALENDÁRIO E HORÁRIOS --- */
+#selecionarHorario {
+    display: none; /* Começa escondido */
+    justify-content: center;
+    align-items: start;
+    padding-top: 2rem;
+}
+
+#agendamentoModal {
+    width: 22rem; /* Era 25rem, deixei um pouco mais enxuto */
+    max-height: 85vh; /* REGRA DE OURO: Trava a altura máxima em 85% da tela */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+#agendamentoHeader {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 0.8rem 1rem; /* Reduzi o espaço interno aqui */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setaMes {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: .2s;
+}
+
+.setaMes:hover {
+    color: #3232A0; /* Muda de cor ao passar o mouse */
+}
+
+#mesAnoTexto {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+#calendarioBox {
+    padding: 1rem;
+}
+
+.diasSemana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 0.5rem;
+}
+
+#diasGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr); 
+    gap: 0.3rem; /* Os números vão ficar um pouquinho mais próximos */
+    min-height: 12rem; /* Reduzi a altura total da parte do calendário */
+}
+
+.diaBtn {
+    width: 100%;
+    aspect-ratio: 1;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: 0.2s;
+}
+
+.diaBtn:hover:not(:disabled) {
+    background-color: #3232a085;
+}
+
+.diaBtn.selecionado {
+    background-color: #3232A0;
+    color: white;
+    font-weight: bold;
+}
+
+.diaBtn:disabled {
+    color: #e0e0e0; /* Deixei um cinza mais clarinho pra ficar mais elegante */
+    cursor: default; /* Aqui é a mágica: volta a ser a setinha normal do mouse */
+}
+
+#divisor {
+    width: 90%;
+    height: 1px;
+    background-color: #eee;
+    margin: 0 auto;
+}
+
+#horariosTitle {
+    text-align: center;
+    font-family: sans-serif;
+    color: #333;
+    margin: 1rem 0;
+}
+
+#horariosBox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Mudei de 3 para 4 colunas */
+    gap: 0.4rem;
+    padding: 0 1rem;
+    max-height: 12rem; /* Aumentei um pouco o scroll */
+    overflow-y: auto;
+}
+
+#horariosBox p {
+    margin-left: 5.2rem;
+    width: 10rem;
+    
+}
+
+.horarioBtn {
+    border: 1px solid #3232A0;
+    background-color: white;
+    color: #333;
+    padding: 0.4rem 0; /* Deixou o botão um pouco mais "fino" */
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-size: 0.9rem; /* Fonte um tiquinho menor */
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.horarioBtn:hover {
+    background-color: #dee0ff;
+}
+
+.horarioBtn.selecionado {
+    background-color: #3232A0;
+    color: white;
+    border-color: #3232A0;
+}
+
+#agendamentoFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
+    margin-top: 1rem;
+}
+
+#agendamentoFooter button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnVoltarProfissional {
+    background-color: transparent;
+    color: #333;
+    transition: .4s;
+}
+
+#btnVoltarProfissional:hover{
+    background-color: #3232a096;
+    color: white;
+}
+
+#btnConfirmar {
+    background-color: #3232A0;
+    color: white;
+}
+
+#btnConfirmar:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+
+
+/* Janela flutuante do Login */
+#loginOverlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none; /* Começa escondido */
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.loginCard {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    border: 1px solid #333;
+}
+
+.loginCard button {
+    background: #4285F4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.loginCard input {
+    margin: 15px 0;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #2b2b2b;
+    color: white;
+}
+
+.escondido { display: none !important; }

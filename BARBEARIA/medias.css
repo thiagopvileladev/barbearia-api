@@ -1,0 +1,1133 @@
+@media screen and (max-width:1120px){
+    #headerHolder{
+        width: 45rem;
+    }
+
+    #hero{
+    width: 100%;
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #carrossel {
+    width: 45rem;
+    height: 22.5rem;
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 11px;
+}
+
+    #box{
+    width: 45rem;
+}
+
+    #boxLeft{
+    width:26.25rem;
+    
+}
+
+#boxRight{
+    width: 18.75rem;
+}
+
+
+
+#mapa{
+    width: 100%;
+    height: 15rem;
+}
+
+#mapaIframe{
+    width: 18.75rem;
+}
+
+#mapaDown{
+    width: 18.75rem;
+    margin-left: 0rem;
+}
+
+#mapaDown1{
+    width: 15rem;
+    height: 6rem;
+    display: flex;
+}
+
+#mapaDownRightText{
+    font-family: sans-serif;
+    margin: 0 0 0 1rem;
+    font-size: .85rem;
+}
+
+#mapaDownRightLink{
+    color: rgb(55, 0, 255);
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: .3rem 0 0 1rem;
+    font-size: .85rem;
+}
+
+
+#mapaDown2{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    border-top: 1px solid rgb(155, 155, 155);
+}
+
+#mapaDown2Right p {
+    margin: 0 0 .3rem 1rem;
+    font-size: .85rem;
+}
+
+#mapaDown3{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    border-top: 1px solid rgb(155, 155, 155);
+}
+
+#mapaDown3Right{
+    padding: 0 0 0 1rem;
+    font-size: .85rem;
+}
+
+#mapaDown4{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(155, 155, 155);
+}
+
+#mapaDown4 img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#mapaDown2Left img, #mapaDown1Left img, #mapaDown3Left img{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+
+
+#boxLeftCartao{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+}
+
+#boxLeftCartaoImg{
+    width: 7rem;
+    height: 7rem;
+}
+
+#boxLeftCartaoImg img{
+    width: 7rem;
+    height: 7rem;
+}
+
+#boxLeftCartaoDetails p{
+    font-size: 1.25rem;
+    margin: .5rem 0 0 .7rem;
+}
+
+#boxLeftTitle{
+    font-size: 1.3rem;
+}
+
+#boxLeft{
+    width:26.25rem;
+}
+
+#servicosHolder{
+    width: 26.25rem;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+    gap:1rem;
+}
+
+.servicosHolderButton{
+    width: calc(100% - 3rem);
+    height: 3rem;
+    border-radius: 11px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: .8rem;
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.buttonArrow{
+    width: 1rem;
+    position: absolute;
+    margin-left:19.5rem;
+    transition: .5s;
+}
+
+
+
+#button1Hider, #button2Hider{
+    width: calc((100% - 3rem) - 2.5px);
+    margin-bottom: 1rem;
+    padding: 0rem 0;
+    gap: 1rem;
+}
+
+.button1HiderButton{
+    height: 4rem;
+}
+
+.infoBoxTitle{
+    font-size: 1.1rem;
+    margin: 0;
+
+}
+
+.infoBox{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: .2rem;
+}
+
+.infoBoxText{
+    font-size: .75rem;
+}
+
+.infoHolderImg img{
+    width: 3rem;
+    height: 3rem;
+}
+
+#equipeBoxTitle{
+    margin: .4rem 0 .75rem 0;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+.equipeCard{
+    width: 10rem;
+    height: 14rem;
+    border-radius: 11px;
+}
+
+.equipeCardImg{
+    width: 8rem;
+    height: 8rem;
+    margin-top: 1rem;
+}
+
+.equipeCard p{
+    margin: 0;
+    font-size: .85rem;
+}
+
+#footer{
+    height: 12rem;
+}
+}
+
+@media screen and (max-width:772px){
+    #header{
+    width: 100%;
+    box-shadow: 0px 5px 10px 0px rgb(189, 189, 189);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+    #headerLog{
+        display: none;
+    }
+
+    #headerHolder{
+        justify-content: center;
+        width: 35rem;
+    }
+
+    #carrossel {
+        width: 35rem;
+        height: 22rem;
+        border-radius: 11px;
+}
+
+#box{
+    flex-direction: column;
+    align-items: center;
+}
+
+#mapa{
+    display: none;
+}
+
+#boxLeft{
+    width: 35rem;
+}
+
+#boxRight{
+    width: 35rem;
+    align-items: center;
+}
+
+#mapaDown{
+    width: 100%;
+    border-radius: 11px;
+}
+
+.servicosHolderButton{
+    width: 35rem;
+    height: 4rem;
+}
+
+.buttonArrow{
+    width: 1rem;
+    position: absolute;
+    margin-left:31rem;
+    transition: .5s;
+}
+
+#button1Hider, #button2Hider{
+    width: calc(35rem - 2.5px);
+    margin-bottom: 1rem;
+    padding: 0rem 0;
+    gap: 1rem;
+}
+
+#mapaDownRightText, #mapaDownRightLink{
+    margin: 0 0 0 1.5rem;
+}
+
+
+
+#footer{
+    margin: 3rem 0 0 0;
+    height: 10rem;
+}
+
+}
+
+@media screen and (max-width:725px){
+    #box{
+    width: 100%;
+}
+
+#footer{
+    height: 8rem;
+}
+}
+
+@media screen and (max-width:615px){
+
+    #headerHolder{
+    width: 100%;
+    height: 100%;
+}
+
+    #hero{
+        height: 18rem;
+    }
+
+    #carrossel{
+        width: 28rem;
+        height: 15rem;
+    }
+
+    #boxLeft{
+    width: 28rem;
+    }
+
+    #boxRight{
+    width: 28rem;
+    }
+
+    .servicosHolderButton{
+    width: 28rem;
+    height: 4rem;
+    }
+
+    .buttonArrow{
+    width: 1.2rem;
+    position: absolute;
+    margin-left:24rem;
+    transition: .5s;
+    }
+
+    #button1Hider, #button2Hider{
+    width: calc(28rem - 2.5px);
+    margin-bottom: 1rem;
+    padding: 0rem 0;
+    gap: 1rem;
+}
+
+#footer{
+    height: 7rem;
+}
+}
+
+@media screen and (max-width:529px){
+
+    #hero{
+        height: 15rem;
+    }
+
+    #servicosHolder{
+    width: 24rem;
+}
+
+    #carrossel{
+        width: 24rem;
+        height: 13rem;
+    }
+
+    #boxLeft{
+    width: 24rem;
+    }
+
+    #boxRight{
+    width: 24rem;
+    }
+
+    .servicosHolderButton{
+    width: 24rem;
+    height: 3rem;
+    }
+
+    .buttonArrow{
+    width: 1rem;
+    position: absolute;
+    margin-left:20.4rem;
+    transition: .5s;
+    }
+
+    #button1Hider, #button2Hider{
+    width: calc(24rem - 2.5px);
+    margin-bottom: 1rem;
+    padding: 0rem 0;
+    gap: 1rem;
+}
+
+#boxLeftCartaoImg{
+    width: 5rem;
+    height: 5rem;
+}
+
+#boxLeftCartaoImg img{
+    width: 5rem;
+    height: 5rem;
+}
+
+#boxLeftCartao{
+    height: 5rem;
+}
+
+#boxLeftCartaoDetails p {
+    font-size: 1rem;
+    margin: .5rem 0 0 .4rem;
+  }
+
+  #boxLeftTitle {
+    font-size: 1.1rem;
+  }
+
+  .infoHolder{
+    gap: .5rem;
+}
+
+
+  .infoHolderImg{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .infoHolderImg img{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .infoBoxTitle{
+    font-size: 1rem;
+  }
+
+  .infoBoxImg{
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .servicosHolderButton{
+    font-size: .9rem;
+  }
+}
+
+
+
+@media screen and (max-width:427px){
+
+    #hero{
+        height: 15rem;
+    }
+
+    #servicosHolder{
+    width: 22rem;
+    }
+
+    #carrossel{
+        width: 22rem;
+        height: 13rem;
+    }
+
+    #boxLeft{
+    width: 22rem;
+    }
+
+    #boxRight{
+    width: 22rem;
+    }
+
+    .servicosHolderButton{
+    width: 22rem;
+    height: 3rem;
+    }
+
+    .buttonArrow{
+    width: 1rem;
+    position: absolute;
+    margin-left:18.4rem;
+    transition: .5s;
+    }
+
+    #button1Hider, #button2Hider{
+    width: calc(22rem - 2px);
+    margin-bottom: 1rem;
+    padding: 0rem 0;
+    gap: 1rem;
+}
+
+#boxLeftCartaoImg{
+    width: 5rem;
+    height: 5rem;
+}
+
+#boxLeftCartaoImg img{
+    width: 5rem;
+    height: 5rem;
+}
+
+#boxLeftCartao{
+    height: 5rem;
+}
+
+#boxLeftCartaoDetails p {
+    font-size: 1rem;
+    margin: .5rem 0 0 .4rem;
+  }
+
+  #boxLeftTitle {
+    font-size: 1rem;
+  }
+
+  .infoHolder{
+    gap: .5rem;
+}
+
+
+  .infoHolderImg{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .infoHolderImg img{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .infoBoxTitle{
+    font-size: 1rem;
+  }
+
+  .infoBoxImg{
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .servicosHolderButton{
+    font-size: .9rem;
+  }
+
+  #equipeBoxTitle{
+    margin: 0 0 .25rem 0;
+  }
+
+  .equipeCard{
+    width: 8rem;
+    height: 11rem;
+  }
+
+  .equipeCardImg{
+    width: 6rem;
+    height: 6rem;
+  }
+
+  #mapaDown{
+    transform: translateY(-2.5rem);
+  }
+}
+
+
+@media screen and (max-width:391px){
+
+    #hero{
+        height: 14rem;
+    }
+
+    #servicosHolder{
+    width: 19rem;
+    }
+
+    #carrossel{
+        width: 19rem;
+        height: 12rem;
+    }
+
+    #boxLeft{
+    width: 19rem;
+    }
+
+    #boxRight{
+    width: 19rem;
+    }
+
+    .servicosHolderButton{
+    width: 19rem;
+    height: 2.75rem;
+    font-size: .3rem;
+    }
+
+    #button1, #button2{
+        font-size: .85rem;
+    }
+
+    #equipeBoxHolder{
+        width: 19rem;
+        justify-content: space-between;
+    }
+
+    .buttonArrow{
+    width: 1rem;
+    position: absolute;
+    margin-left:15.4rem;
+    transition: .5s;
+    }
+
+    #button1Hider, #button2Hider{
+    width: calc(19rem - 2px);
+    margin-bottom: 1rem;
+    padding: 0rem 0;
+    gap: 1rem;
+}
+
+#boxLeftCartaoImg{
+    width: 5rem;
+    height: 5rem;
+}
+
+#boxLeftCartaoImg img{
+    width: 5rem;
+    height: 5rem;
+}
+
+#boxLeftCartao{
+    height: 5rem;
+}
+
+#boxLeftCartaoDetails p {
+    font-size: 1rem;
+    margin: .5rem 0 0 .4rem;
+  }
+
+  #boxLeftTitle {
+    font-size: 1rem;
+  }
+
+  .infoHolder{
+    gap: .5rem;
+}
+
+
+  .infoHolderImg{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .infoHolderImg img{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .infoBoxTitle{
+    font-size: 1rem;
+  }
+
+  .infoBoxImg{
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .servicosHolderButton{
+    font-size: .9rem;
+  }
+
+  #equipeBoxTitle{
+    margin: 0 0 .25rem 0;
+  }
+
+  .equipeCard{
+    width: 8rem;
+    height: 11rem;
+  }
+
+  .equipeCardImg{
+    width: 6rem;
+    height: 6rem;
+  }
+
+  #mapaDown{
+    transform: translateY(-2.5rem);
+  }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:878px){
+    #headerBack{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    }
+
+    #headerBack img{
+    width: 2rem;
+    height: 2rem;
+    }
+
+    #selecionarProfissionalTitle{
+    margin: 1.25rem 0;
+    font-size: 1.5rem;
+}
+
+    .profissionalButton{
+    width: 30rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.profissionalButtonHolder{
+    height: 5rem;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.profissionalButtonImg{
+    width: 3rem;
+    height: 3rem;
+}
+
+.profissionalButtonText{
+    font-size: 1.1rem;
+}
+
+.profissionalButtonStatus{
+    width: 12rem;
+    height: 1.75rem;
+    margin-right: 2rem;
+    font-size: .7rem;
+}
+}
+
+@media screen and (max-width:518px){
+
+    #headerBack{
+    width: 2rem;
+    height: 2rem;
+    margin-left: .5rem;
+    }
+
+    #headerBack img{
+    width: 2rem;
+    height: 2rem;
+    }
+
+    #selecionarProfissionalTitle{
+    margin: 1.25rem 0 2rem 0;
+    font-size: 1.5rem;
+}
+
+    .profissionalButton{
+    width: 22rem;
+    height: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.profissionalButtonHolder{
+    height: 4.5rem;
+    gap: .5rem;
+    margin-left: 1rem;
+}
+
+.profissionalButtonImg{
+    width: 3rem;
+    height: 3rem;
+}
+
+.profissionalButtonText{
+    font-size: 1rem;
+}
+
+.profissionalButtonStatus{
+    width: 10.5rem;
+    height: 1.75rem;
+    margin-right: 1rem;
+    font-size: .7rem;
+    border-radius: 6px;
+}
+}
+
+@media screen and (max-width:382px){
+
+    #selecionarProfissionalTitle{
+    margin: 1.25rem 0 2rem 0;
+    font-size: 1.5rem;
+}
+
+    .profissionalButton{
+    width: 20rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.profissionalButtonHolder{
+    height: 4rem;
+    gap: .5rem;
+    margin-left: 1rem;
+}
+
+.profissionalButtonImg{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.profissionalButtonText{
+    font-size: 1rem;
+}
+
+.profissionalButtonStatus{
+    display: none;
+}
+
+#profissionalButton1{
+    margin-bottom: 1.5rem;
+}
+}
+
+@media screen and (max-width:340px){
+
+    #selecionarProfissionalTitle{
+    margin: 1.25rem 0 2rem 0;
+    font-size: 1.3rem;
+}
+
+    .profissionalButton{
+    width: 18rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.profissionalButtonHolder{
+    height: 4rem;
+    gap: .5rem;
+    margin-left: .5rem;
+}
+
+.profissionalButtonImg{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.profissionalButtonText{
+    font-size: 1rem;
+}
+
+.profissionalButtonStatus{
+    display: none;
+}
+
+#profissionalButton1{
+    margin-bottom: 1.5rem;
+}
+}
+
+@media screen and (max-height:852px){
+    #agendamentoHeader {
+    padding: .4rem 1rem;
+    }
+
+    .setaMes {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    }
+    #mesAnoTexto {
+    font-size: 1.3rem;
+    }
+
+    #calendarioBox {
+    padding: 1rem;
+    }
+
+}
+
+@media screen and (max-height:826px){
+    #agendamentoModal {
+        transform: translateY(-1rem);
+}
+}
+
+@media screen and (max-width:386px){
+    /* --- ESTILOS DO CALENDÁRIO E HORÁRIOS --- */
+#selecionarHorario {
+    display: none; /* Começa escondido */
+    justify-content: center;
+    align-items: start;
+    padding-top: 1.8rem;
+}
+
+#agendamentoModal {
+    width: 19.8rem; 
+    max-height: 76.5vh; /* 10% de redução sobre os 85vh */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4.5px 13.5px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 0.9rem;
+}
+
+#agendamentoHeader {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 0.72rem 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setaMes {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.35rem;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.45rem;
+    transition: .2s;
+}
+
+.setaMes:hover {
+    color: #3232A0; 
+}
+
+#mesAnoTexto {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1.62rem;
+    font-weight: normal;
+}
+
+#calendarioBox {
+    padding: 0.9rem;
+}
+
+.diasSemana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 0.45rem;
+}
+
+#diasGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr); 
+    gap: 0.27rem; 
+    min-height: 10.8rem;
+}
+
+.diaBtn {
+    width: 100%;
+    aspect-ratio: 1;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: 0.2s;
+}
+
+.diaBtn:hover:not(:disabled) {
+    background-color: #3232a085;
+}
+
+.diaBtn.selecionado {
+    background-color: #3232A0;
+    color: white;
+    font-weight: bold;
+}
+
+.diaBtn:disabled {
+    color: #e0e0e0;
+    cursor: default;
+}
+
+#divisor {
+    width: 81%;
+    height: 1px;
+    background-color: #eee;
+    margin: 0 auto;
+}
+
+#horariosTitle {
+    text-align: center;
+    font-family: sans-serif;
+    color: #333;
+    margin: 0.9rem 0;
+}
+
+#horariosBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.45rem;
+    padding: 0 0.9rem;
+    max-height: 9rem; 
+    overflow-y: auto;
+}
+
+.horarioBtn {
+    border: 1px solid #3232A0;
+    background-color: white;
+    color: #333;
+    padding: 0.36rem 0;
+    border-radius: 5.4px;
+    font-family: sans-serif;
+    font-size: 0.81rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.horarioBtn:hover {
+    background-color: #dee0ff;
+}
+
+.horarioBtn.selecionado {
+    background-color: #3232A0;
+    color: white;
+    border-color: #3232A0;
+}
+
+#agendamentoFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9rem 0.9rem 0 0.9rem;
+    margin-top: 0.9rem;
+}
+
+#agendamentoFooter button {
+    padding: 0.63rem 1.35rem;
+    border: none;
+    border-radius: 5.4px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnVoltarProfissional {
+    background-color: transparent;
+    color: #333;
+    transition: .4s;
+}
+
+#btnVoltarProfissional:hover{
+    background-color: #3232a096;
+    color: white;
+}
+
+#btnConfirmar {
+    background-color: #3232A0;
+    color: white;
+}
+
+#btnConfirmar:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Janela flutuante do Login */
+#loginOverlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9000; /* Reduzido de 10000 para 9000 */
+}
+
+.loginCard {
+    background: #1e1e1e;
+    padding: 27px;
+    border-radius: 13.5px;
+    text-align: center;
+    color: white;
+    border: 0.9px solid #333;
+}
+
+.loginCard button {
+    background: #4285F4;
+    color: white;
+    border: none;
+    padding: 10.8px 18px;
+    border-radius: 4.5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.loginCard input {
+    margin: 13.5px 0;
+    padding: 9px;
+    width: 72%;
+    border-radius: 4.5px;
+    border: 0.9px solid #444;
+    background: #2b2b2b;
+    color: white;
+}
+
+.escondido { display: none !important; }
+}
